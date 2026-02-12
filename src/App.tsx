@@ -101,4 +101,8 @@ function App() {
   );
 }
 
+import { VideoCallPage } from './pages/meetings/VideoCallPage'; 
+
+<Route path="/video-call" element={<VideoCallPage />} />
+
 export default App;

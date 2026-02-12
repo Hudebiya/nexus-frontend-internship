@@ -1,3 +1,5 @@
+import MeetingCalendar from '../../components/calendar/MeetingCalendar';
+
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Users, Bell, Calendar, TrendingUp, AlertCircle, PlusCircle } from 'lucide-react';
@@ -168,6 +170,12 @@ export const EntrepreneurDashboard: React.FC = () => {
             </CardBody>
           </Card>
         </div>
+      </div>
+      <Link to="/video-call">
+         <Button className="w-full mt-2 bg-primary-600">Join Video Call</Button>
+      </Link>
+      <div className="mt-6">
+         <MeetingCalendar />
       </div>
     </div>
   );

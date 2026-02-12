@@ -1,3 +1,5 @@
+import MeetingCalendar from '../../components/calendar/MeetingCalendar';
+
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Users, PieChart, Filter, Search, PlusCircle } from 'lucide-react';
