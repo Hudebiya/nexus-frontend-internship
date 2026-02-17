@@ -30,6 +30,9 @@ import { DealsPage } from './pages/deals/DealsPage';
 // Chat Pages
 import { ChatPage } from './pages/chat/ChatPage';
 
+// Meeting Pages
+import { VideoCallPage } from './pages/meetings/VideoCallPage';
+
 function App() {
   return (
     <AuthProvider>
@@ -43,6 +46,8 @@ function App() {
           <Route path="/dashboard" element={<DashboardLayout />}>
             <Route path="entrepreneur" element={<EntrepreneurDashboard />} />
             <Route path="investor" element={<InvestorDashboard />} />
+            {/* YE RAHA SAHI ROUTE */}
+            <Route path="video-call" element={<VideoCallPage />} />
           </Route>
           
           {/* Profile Routes */}
@@ -100,9 +105,5 @@ function App() {
     </AuthProvider>
   );
 }
-
-import { VideoCallPage } from './pages/meetings/VideoCallPage'; 
-
-<Route path="/video-call" element={<VideoCallPage />} />
 
 export default App;
